@@ -1,13 +1,17 @@
 import os
 from openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Initialize Grok client
-# XAI_API_KEY = os.getenv("XAI_API_KEY")
+XAI_API_KEY = os.getenv("XAI_API_KEY")
+print(XAI_API_KEY)
 
 class GrokAPI:
     def __init__(self):
         self.client = OpenAI(
-            api_key="YOUR_API_KEY",
+            api_key=XAI_API_KEY,
             base_url="https://api.x.ai/v1",
         )
 
