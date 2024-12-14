@@ -1,5 +1,5 @@
 import streamlit as st
-from form_assistance import FormAssistantService
+from app.form_assistance import FormAssistantService
 
 class InteractiveFormFiller:
     def __init__(self, assistant, form_type, user_info):
