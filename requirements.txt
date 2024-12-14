@@ -2,3 +2,5 @@ openai
 streamlit
 Faker==0.7.4
 python-dotenv
+pytesseract
+PyPDF2
