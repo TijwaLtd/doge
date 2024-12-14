@@ -49,6 +49,7 @@ def main():
         "Small Business Administration": "business-license",
         "Department of Education (Student Loans)": "student-loan-application"
     }
+    
     form_type = agency_form_map[selected_agency]
 
     # SSN Verification (only once)
